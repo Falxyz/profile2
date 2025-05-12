@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bgGerak 10s ease infinite;
+  background: linear-gradient(45deg, red, blue, green, purple);
+  background-size: 400% 400%;
+}
+
+@keyframes bgGerak {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+}
+
+.profile-box {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  backdrop-filter: blur(8px);
+}
+
+.profile-box:active {
+  transform: scale(0.98);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sosial {
+  margin-top: 15px;
+}
+
+.sosial a {
+  color: #0077ff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.sosial a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.profile-box {
+  background: rgba(0, 0, 0, 0.85); /* Latar belakang hitam */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  backdrop-filter: blur(8px);
+  
+}.profile-box {
+  color: white; /* Semua teks dalam profile-box tetap putih */
+}
+
+.profile-box h1,
+.profile-box p {
+  color: white;
+}
+
+.profile-box a {
+  text-decoration: none;
+}
+
+.profile-box a[href*="wa.me"] {
+  color: #25D366; /* Warna hijau untuk WhatsApp */
+}
+
+.profile-box .tik {
+  color: white; /* "tik" berwarna putih */
+}
+
+.profile-box .tok {
+  color: gray; /* "tok" berwarna hitam */
+}
+
+.profile-box a:hover {
+  text-decoration: underline;
+}
